@@ -294,13 +294,19 @@ public class Form extends javax.swing.JFrame {
    
     //FILE>QUIT
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        
         System.exit(0);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
     
     //EDIT>Clear
     private void clearScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearScreenActionPerformed
+        //clear the screen, and dump all global variables from memory.  Or replace with null. whatever. same thing.
         calcScreen.setText("0");
+        operator = ".";
+        sNum1 = "";
+        sNum2 = "";
+        screen = "";
+        num1 = 0;
+        num2 =0;
     }//GEN-LAST:event_clearScreenActionPerformed
 
     //Press 1 Key
@@ -413,20 +419,60 @@ public class Form extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_delButtonActionPerformed
 
+    //Press + operator
     private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
-        // TODO add your handling code here:
+        sNum1 = calcScreen.getText();
+        if (!calcScreen.getText().equals("0")){
+            calcScreen.setText(calcScreen.getText() + "-");
+            operator = "-";
+        } 
     }//GEN-LAST:event_addButtonActionPerformed
 
+    //Press x operator
     private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multButtonActionPerformed
-        // TODO add your handling code here:
+        sNum1 = calcScreen.getText();
+        if (!calcScreen.getText().equals("0")){
+            calcScreen.setText(calcScreen.getText() + "-");
+            operator = "*";
+        } 
     }//GEN-LAST:event_multButtonActionPerformed
 
+    //Press / operator
     private void divideButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideButtonActionPerformed
-        // TODO add your handling code here:
+        sNum1 = calcScreen.getText();
+        if (!calcScreen.getText().equals("0")){
+            calcScreen.setText(calcScreen.getText() + "-");
+            operator = "/";
+        } 
     }//GEN-LAST:event_divideButtonActionPerformed
 
     private void equalsKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsKeyActionPerformed
-        // TODO add your handling code here:
+        //cast sNum1 and sNum2 into num1 and num2.  THEN use them below.
+        //...
+        //...           I need to figure it out.
+        //              also need to take in sNum2 still.
+        switch (operator) {
+            case "+":
+                answer = num1 + num2;
+                sAnswer = Integer.toString(answer);
+                calcScreen.setText(sAnswer);
+                break;
+            case "-":
+                answer = num1 - num2;
+                sAnswer = Integer.toString(answer);
+                calcScreen.setText(sAnswer);
+                break;
+            case "*":
+                answer = num1 - num2;
+                sAnswer = Integer.toString(answer);
+                calcScreen.setText(sAnswer);
+                break;
+            case "/":
+                answer = num1 - num2;
+                sAnswer = Integer.toString(answer);
+                calcScreen.setText(sAnswer);
+                break;
+        }  
     }//GEN-LAST:event_equalsKeyActionPerformed
 
     public static void main(String args[]) {
@@ -487,12 +533,13 @@ public class Form extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     //GLOBAL VARIABLES
-    String operator = "";
+    String operator;
     String sNum1 = "";
     String sNum2 = "";
     String screen = "";
+    String sAnswer = "";
     int num1 = 0;
-    int num2 =0;
+    int num2 = 0;
+    int answer = 0;
   
 }
-
