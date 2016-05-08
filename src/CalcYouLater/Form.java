@@ -424,7 +424,7 @@ public class Form extends javax.swing.JFrame {
         sNum1 = calcScreen.getText();
         if (!calcScreen.getText().equals("0")){
             calcScreen.setText(calcScreen.getText() + "-");
-            operator = "-";
+            operator = "+";
         } 
     }//GEN-LAST:event_addButtonActionPerformed
 
@@ -432,7 +432,7 @@ public class Form extends javax.swing.JFrame {
     private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multButtonActionPerformed
         sNum1 = calcScreen.getText();
         if (!calcScreen.getText().equals("0")){
-            calcScreen.setText(calcScreen.getText() + "-");
+            calcScreen.setText(calcScreen.getText() + "*");
             operator = "*";
         } 
     }//GEN-LAST:event_multButtonActionPerformed
@@ -441,7 +441,7 @@ public class Form extends javax.swing.JFrame {
     private void divideButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideButtonActionPerformed
         sNum1 = calcScreen.getText();
         if (!calcScreen.getText().equals("0")){
-            calcScreen.setText(calcScreen.getText() + "-");
+            calcScreen.setText(calcScreen.getText() + "/");
             operator = "/";
         } 
     }//GEN-LAST:event_divideButtonActionPerformed
