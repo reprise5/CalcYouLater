@@ -12,7 +12,7 @@ public class Form extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         calcButton1 = new javax.swing.JButton();
@@ -290,15 +290,15 @@ public class Form extends javax.swing.JFrame {
         jLabel1.getAccessibleContext().setAccessibleName("ProgrammerLabel");
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
    
     //FILE>QUIT
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         System.exit(0);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }                                          
     
     //EDIT>Clear
-    private void clearScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearScreenActionPerformed
+    private void clearScreenActionPerformed(java.awt.event.ActionEvent evt) {                                            
         //clear the screen, and dump all global variables from memory.  Or replace with null. whatever. same thing.
         calcScreen.setText("0");
         operator = ".";
@@ -307,146 +307,259 @@ public class Form extends javax.swing.JFrame {
         screen = "";
         num1 = 0;
         num2 =0;
-    }//GEN-LAST:event_clearScreenActionPerformed
+    }                                           
 
     //Press 1 Key
-    private void calcButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton1ActionPerformed
-               if (calcScreen.getText().equals("0")){
+    private void calcButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        if (calcScreen.getText().equals("0")){
             calcScreen.setText("1");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "1");
-    }//GEN-LAST:event_calcButton1ActionPerformed
+        
+        //if test char is an operator, clear and begin typing a new num.  when equals is pressed, the screen will be taken and saved as sNum2.
+        //sNum1 is already saved when the operator is pressed. before printing the operator.
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("1");
+            }
+        }
+    }                                           
 
     //Press 2 Key
-    private void calcButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton2ActionPerformed
+    private void calcButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("2");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "2");
-    }//GEN-LAST:event_calcButton2ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("2");
+            }
+        }
+    }                                           
 
     //Press 3 Key
-    private void calcButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton3ActionPerformed
+    private void calcButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("3");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "3");
-    }//GEN-LAST:event_calcButton3ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("3");
+            }
+        }
+    }                                           
 
     //Press 4 Key
-    private void calcButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton4ActionPerformed
+    private void calcButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("4");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "4");
-    }//GEN-LAST:event_calcButton4ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("4");
+            }
+        }
+    }                                           
 
     //Press 5 Key
-    private void calcButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton5ActionPerformed
+    private void calcButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("5");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "5");
-    }//GEN-LAST:event_calcButton5ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("5");
+            }
+        }
+    }                                           
 
     //Press 6 Key
-    private void calcButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton6ActionPerformed
+    private void calcButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("6");
-         }
+        }
         else    
             calcScreen.setText(calcScreen.getText() + "6");
-    }//GEN-LAST:event_calcButton6ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("6");
+            }
+        }
+    }                                           
 
     //Press 7 Key
-    private void calcButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton7ActionPerformed
+    private void calcButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("7");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "7");
-    }//GEN-LAST:event_calcButton7ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("7");
+            }
+        }
+    }                                           
 
     //Press 8 Key
-    private void calcButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton8ActionPerformed
+    private void calcButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("8");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "8");
-    }//GEN-LAST:event_calcButton8ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("8");
+            }
+        }
+    }                                           
 
     //Press 9 key
-    private void calcButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton9ActionPerformed
-
+    private void calcButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("9");
         }
         else    
             calcScreen.setText(calcScreen.getText() + "9");
-    }//GEN-LAST:event_calcButton9ActionPerformed
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            System.out.println(test);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                calcScreen.setText("");
+                calcScreen.setText("9");
+            }
+        }
+    }                                           
 
     //Press 0 key
-    private void calcButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton0ActionPerformed
+    private void calcButton0ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (!calcScreen.getText().equals("0")){
             calcScreen.setText(calcScreen.getText() + "0");
         }    
-    }//GEN-LAST:event_calcButton0ActionPerformed
+    }                                           
 
     //Press - operator
-    private void subtractButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subtractButtonActionPerformed
+    private void subtractButtonActionPerformed(java.awt.event.ActionEvent evt) {                                               
         sNum1 = calcScreen.getText();
-        if (!calcScreen.getText().equals("0")){
+        screen = calcScreen.getText();
+        char test = screen.charAt(screen.length()-1);
+        
+        if (!calcScreen.getText().equals("0") && test != '-' && test != '+' && test != '*' && test != '/'){
             calcScreen.setText(calcScreen.getText() + "-");
-            operator = "-";
+            operator = "-";         
         }      
-    }//GEN-LAST:event_subtractButtonActionPerformed
+    }                                              
 
     // Press DEL key
-    private void delButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delButtonActionPerformed
+    private void delButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
         if (!calcScreen.getText().equals("0")){
             screen = calcScreen.getText();
             screen = screen.substring(0, screen.length()-1);
             calcScreen.setText(screen);
         }
+        //if the screen would be empty, put a 0 instead.  so that it's handled by the first if next press.
         if (calcScreen.getText().equals("")){
             calcScreen.setText("0");
         }
-    }//GEN-LAST:event_delButtonActionPerformed
+    }                                         
 
     //Press + operator
-    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
         sNum1 = calcScreen.getText();
-        if (!calcScreen.getText().equals("0")){
-            calcScreen.setText(calcScreen.getText() + "-");
+        screen = calcScreen.getText();
+        char test = screen.charAt(screen.length()-1);
+        
+        if (!calcScreen.getText().equals("0") && test != '-' && test != '+' && test != '*' && test != '/'){
+            calcScreen.setText(calcScreen.getText() + "+");
             operator = "+";
         } 
-    }//GEN-LAST:event_addButtonActionPerformed
+    }                                         
 
     //Press x operator
-    private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multButtonActionPerformed
+    private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
         sNum1 = calcScreen.getText();
-        if (!calcScreen.getText().equals("0")){
+        screen = calcScreen.getText();
+        char test = screen.charAt(screen.length()-1);
+        
+        if (!calcScreen.getText().equals("0") && test != '-' && test != '+' && test != '*' && test != '/'){
             calcScreen.setText(calcScreen.getText() + "*");
             operator = "*";
         } 
-    }//GEN-LAST:event_multButtonActionPerformed
+    }                                          
 
     //Press / operator
-    private void divideButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideButtonActionPerformed
+    private void divideButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
         sNum1 = calcScreen.getText();
-        if (!calcScreen.getText().equals("0")){
+        screen = calcScreen.getText();
+        char test = screen.charAt(screen.length()-1);
+        
+        if (!calcScreen.getText().equals("0") && test != '-' && test != '+' && test != '*' && test != '/'){
             calcScreen.setText(calcScreen.getText() + "/");
             operator = "/";
         } 
-    }//GEN-LAST:event_divideButtonActionPerformed
+    }                                            
 
-    private void equalsKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsKeyActionPerformed
+    private void equalsKeyActionPerformed(java.awt.event.ActionEvent evt) {                                          
         //cast sNum1 and sNum2 into num1 and num2.  THEN use them below.
         //...
         //...           I need to figure it out.
@@ -473,7 +586,7 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText(sAnswer);
                 break;
         }  
-    }//GEN-LAST:event_equalsKeyActionPerformed
+    }                                         
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -506,7 +619,7 @@ public class Form extends javax.swing.JFrame {
             }
         });
     }
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton addButton;
     private javax.swing.JButton calcButton0;
     private javax.swing.JButton calcButton1;
@@ -530,7 +643,7 @@ public class Form extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JButton multButton;
     private javax.swing.JButton subtractButton;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 
     //GLOBAL VARIABLES
     String operator;
@@ -541,5 +654,5 @@ public class Form extends javax.swing.JFrame {
     int num1 = 0;
     int num2 = 0;
     int answer = 0;
-  
-}
+  }
+
