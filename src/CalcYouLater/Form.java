@@ -12,7 +12,7 @@ public class Form extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         calcButton1 = new javax.swing.JButton();
@@ -301,15 +301,15 @@ public class Form extends javax.swing.JFrame {
         jLabel1.getAccessibleContext().setAccessibleName("ProgrammerLabel");
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
    
     //FILE>QUIT
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         System.exit(0);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }                                          
     
     //EDIT>Clear
-    private void clearAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearAllActionPerformed
+    private void clearAllActionPerformed(java.awt.event.ActionEvent evt) {                                         
         //clear the screen, and dump all global variables from memory.  Or replace with null. whatever. same thing.
         calcScreen.setText("0");
         operator = ".";
@@ -318,10 +318,10 @@ public class Form extends javax.swing.JFrame {
         screen = "";
         num1 = 0;
         num2 =0;
-    }//GEN-LAST:event_clearAllActionPerformed
+    }                                        
 
     //Press 1 Key
-    private void calcButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton1ActionPerformed
+    private void calcButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("1");
         }
@@ -339,10 +339,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("1");
             }
         }
-    }//GEN-LAST:event_calcButton1ActionPerformed
+    }                                           
 
     //Press 2 Key
-    private void calcButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton2ActionPerformed
+    private void calcButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("2");
         }
@@ -358,10 +358,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("2");
             }
         }
-    }//GEN-LAST:event_calcButton2ActionPerformed
+    }                                           
 
     //Press 3 Key
-    private void calcButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton3ActionPerformed
+    private void calcButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("3");
         }
@@ -377,10 +377,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("3");
             }
         }
-    }//GEN-LAST:event_calcButton3ActionPerformed
+    }                                           
 
     //Press 4 Key
-    private void calcButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton4ActionPerformed
+    private void calcButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("4");
         }
@@ -396,10 +396,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("4");
             }
         }
-    }//GEN-LAST:event_calcButton4ActionPerformed
+    }                                           
 
     //Press 5 Key
-    private void calcButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton5ActionPerformed
+    private void calcButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("5");
         }
@@ -415,10 +415,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("5");
             }
         }
-    }//GEN-LAST:event_calcButton5ActionPerformed
+    }                                           
 
     //Press 6 Key
-    private void calcButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton6ActionPerformed
+    private void calcButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("6");
         }
@@ -434,10 +434,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("6");
             }
         }
-    }//GEN-LAST:event_calcButton6ActionPerformed
+    }                                           
 
     //Press 7 Key
-    private void calcButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton7ActionPerformed
+    private void calcButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("7");
         }
@@ -453,10 +453,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("7");
             }
         }
-    }//GEN-LAST:event_calcButton7ActionPerformed
+    }                                           
 
     //Press 8 Key
-    private void calcButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton8ActionPerformed
+    private void calcButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("8");
         }
@@ -472,10 +472,10 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("8");
             }
         }
-    }//GEN-LAST:event_calcButton8ActionPerformed
+    }                                           
 
     //Press 9 key
-    private void calcButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton9ActionPerformed
+    private void calcButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         if (calcScreen.getText().equals("0")){
             calcScreen.setText("9");
         }
@@ -491,22 +491,30 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText("9");
             }
         }
-    }//GEN-LAST:event_calcButton9ActionPerformed
+    }                                           
 
     //Press 0 key
-    private void calcButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcButton0ActionPerformed
-        if (!calcScreen.getText().equals("0")){
-            calcScreen.setText(calcScreen.getText() + "0");
+    private void calcButton0ActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        
+        if (calcScreen.getText().equals("0")){
+            calcScreen.setText("0");
         }
-        /*
-        *AFTER THE 0PERATOR, USER CAN TYPE IN MULTIPLE 0'S AFTER INIT 0.
-        *SCREEN NOT CLEARED. 
-        *WRONG NUM2 GRABBED.
-        */
-    }//GEN-LAST:event_calcButton0ActionPerformed
+        else    
+            calcScreen.setText(calcScreen.getText() + "0");
+
+        screen = calcScreen.getText();
+        if (screen.length() > 2){
+            char test = screen.charAt(screen.length()-2);
+            
+            if (test == '+' || test == '-' || test == '*' || test == '/'){
+                System.out.println(test);
+                calcScreen.setText("0");
+            }
+        }
+    }                                           
 
     //Press - operator
-    private void subtractButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subtractButtonActionPerformed
+    private void subtractButtonActionPerformed(java.awt.event.ActionEvent evt) {                                               
         sNum1 = calcScreen.getText();
         screen = calcScreen.getText();
         char test = screen.charAt(screen.length()-1);
@@ -515,10 +523,10 @@ public class Form extends javax.swing.JFrame {
             calcScreen.setText(calcScreen.getText() + "-");
             operator = "-";         
         }      
-    }//GEN-LAST:event_subtractButtonActionPerformed
+    }                                              
 
     // Press DEL key
-    private void delButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delButtonActionPerformed
+    private void delButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
         if (!calcScreen.getText().equals("0")){
             screen = calcScreen.getText();
             screen = screen.substring(0, screen.length()-1);
@@ -528,10 +536,10 @@ public class Form extends javax.swing.JFrame {
         if (calcScreen.getText().equals("")){
             calcScreen.setText("0");
         }
-    }//GEN-LAST:event_delButtonActionPerformed
+    }                                         
 
     //Press + operator
-    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {                                          
         sNum1 = calcScreen.getText();
         screen = calcScreen.getText();
         char test = screen.charAt(screen.length()-1);
@@ -540,10 +548,10 @@ public class Form extends javax.swing.JFrame {
             calcScreen.setText(calcScreen.getText() + "+");
             operator = "+";
         } 
-    }//GEN-LAST:event_addButtonActionPerformed
+    }                                         
 
     //Press x operator
-    private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multButtonActionPerformed
+    private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {                                           
         sNum1 = calcScreen.getText();
         screen = calcScreen.getText();
         char test = screen.charAt(screen.length()-1);
@@ -552,10 +560,10 @@ public class Form extends javax.swing.JFrame {
             calcScreen.setText(calcScreen.getText() + "*");
             operator = "*";
         } 
-    }//GEN-LAST:event_multButtonActionPerformed
+    }                                          
 
     //Press / operator
-    private void divideButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divideButtonActionPerformed
+    private void divideButtonActionPerformed(java.awt.event.ActionEvent evt) {                                             
         sNum1 = calcScreen.getText();
         screen = calcScreen.getText();
         char test = screen.charAt(screen.length()-1);
@@ -564,10 +572,10 @@ public class Form extends javax.swing.JFrame {
             calcScreen.setText(calcScreen.getText() + "/");
             operator = "/";
         } 
-    }//GEN-LAST:event_divideButtonActionPerformed
+    }                                            
 
     //Press = Key
-    private void equalsKeyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equalsKeyActionPerformed
+    private void equalsKeyActionPerformed(java.awt.event.ActionEvent evt) {                                          
         sNum2 = calcScreen.getText();
         num1 = Integer.parseInt(sNum1);
         num2 = Integer.parseInt(sNum2);
@@ -597,19 +605,25 @@ public class Form extends javax.swing.JFrame {
                 calcScreen.setText(sAnswer);
                 break;
             case "/":
-                
-                answer = num1 / num2;
-                sAnswer = Integer.toString(answer);
-                calcScreen.setText(sAnswer);
-                break;
+                if (num2 > 0){
+                    answer = num1 / num2;
+                    sAnswer = Integer.toString(answer);
+                    calcScreen.setText(sAnswer);
+                    break;
+                }
+                else{
+                    calcScreen.setText("ERROR");
+                    answer = 0;
+                    sAnswer = "0";
+                }
         }
         System.out.println("Answer: " + answer);
-    }//GEN-LAST:event_equalsKeyActionPerformed
+    }                                         
 
     //Edit>Clear Screen
-    private void clearScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearScreenActionPerformed
+    private void clearScreenActionPerformed(java.awt.event.ActionEvent evt) {                                            
         calcScreen.setText("");
-    }//GEN-LAST:event_clearScreenActionPerformed
+    }                                           
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -642,7 +656,7 @@ public class Form extends javax.swing.JFrame {
             }
         });
     }
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton addButton;
     private javax.swing.JButton calcButton0;
     private javax.swing.JButton calcButton1;
@@ -667,7 +681,7 @@ public class Form extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JButton multButton;
     private javax.swing.JButton subtractButton;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 
     //GLOBAL VARIABLES
     String operator;
@@ -679,4 +693,3 @@ public class Form extends javax.swing.JFrame {
     int num2 = 0;
     int answer = 0;
   }
-
