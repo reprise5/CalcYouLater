@@ -303,7 +303,7 @@ public class Form extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
    
-    //FILE>QUIT
+    //FILE>QUITInteger
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {                                           
         System.exit(0);
     }                                          
@@ -576,38 +576,40 @@ public class Form extends javax.swing.JFrame {
 
     //Press = Key
     private void equalsKeyActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        
+        //cast sNum1 and sNum2 into num1 and num2.  THEN use them below.
         sNum2 = calcScreen.getText();
-        num1 = Integer.parseInt(sNum1);
-        num2 = Integer.parseInt(sNum2);
+        num1 = Double.parseDouble(sNum1);
+        num2 = Double.parseDouble(sNum2);
         
         System.out.println("sNum1: " + sNum1 + "\n"
                 + "sNum2: " + sNum2 + "\n"
                 + "num1: " + num1 + "\n"
                 + "num2: " + num2
         );
-//cast sNum1 and sNum2 into num1 and num2.  THEN use them below.
   
         switch (operator) {
             case "+":
                 answer = num1 + num2;
-                sAnswer = Integer.toString(answer);
+                sAnswer = Double.toString(answer);
                 calcScreen.setText(sAnswer);
                 break;
             case "-":
                 answer = num1 - num2;
-                sAnswer = Integer.toString(answer);
+                sAnswer = Double.toString(answer);
                 calcScreen.setText(sAnswer);
                 break;
             case "*":
-                //wrong
                 answer = num1 * num2;
-                sAnswer = Integer.toString(answer);
+                sAnswer = Double.toString(answer);
                 calcScreen.setText(sAnswer);
                 break;
             case "/":
                 if (num2 > 0){
                     answer = num1 / num2;
-                    sAnswer = Integer.toString(answer);
+                    sAnswer = Double.toString(answer);
+                    //The screen is 10 chars, need first 10 chars of a decimal answer.
+                    sAnswer = sAnswer.substring(0, Math.min(sAnswer.length(), 10));
                     calcScreen.setText(sAnswer);
                     break;
                 }
@@ -689,7 +691,9 @@ public class Form extends javax.swing.JFrame {
     String sNum2 = "";
     String screen = "";
     String sAnswer = "";
-    int num1 = 0;
-    int num2 = 0;
-    int answer = 0;
+    double num1 = 0;
+    double num2 = 0;
+    double answer = 0;
   }
+
+
